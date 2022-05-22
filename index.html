@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>form_sales</title>
+        <meta name="viewport"content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="ground">       
+            <div class="container">
+                <img class="image-mountains" src="mountains-1.png">
+                <div class="forms">
+                    <div class="registration">
+                        <div>
+                            <h3 class="text-blue">Регистрация</h3>
+                        </div>
+                    </div>
+                    <form action="/form-submit" class="string1">                 
+                        <div class="field">
+                            <label for="firstName">Имя</label>
+                            <input class="barefield" type="text" id="firstName" name="firstName" />
+                        </div>                 
+                        <div class="field">
+                            <label for="lastName">Фамилия</label>
+                            <input class="barefield" type="text" id="lastName" name="lastName"/>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input class="barefield" type="text" id="email" name="email"/>
+                        </div>               
+                        <div class="field">            
+                            <label for="phone">Телефон</label>
+                            <input class="barefield" type="text" id="phone" name="phone"/> 
+                        </div>
+                    </form>
+                    <div class="solid">
+                        <div>
+                            <h3 class="text-regular">Адрес доставки</h3>
+                        </div>
+                    </div>
+                    <form action="/form-submit" class="string1">                   
+                        <div class="fieldmiddle">
+                            <label for="country">Страна</label>
+                            <select autocomplete="country-name" class="barefieldcountry" id="country" 
+                                name="country"><option>Россия</option><option>Беларусь</option><option>Казахстан</option>
+                                <option>Польша</option></select>
+                        </div>      
+                        <div class="fieldmiddle">
+                            <label for="city">Город</label>
+                            <input class="barefield" type="text" id="city" name="city"/>
+                        </div>        
+                        <div class="fieldmiddle">
+                            <label for="postalCode">Почтовый индекс</label>
+                            <input class="barefield" type="text" id="postalCode" name="postalCode"/>
+                        </div>
+                    </form>                      
+                    <form action="/form-submit" class="string1">                 
+                        <div class="fieldmiddle1">
+                            <label for="streetAddress">Адрес доставки (улица, дом, квартира)</label>
+                            <input class="barefield" type="text" id="streetAddress" name="streetAddress"/>
+                        </div>
+                    </form>
+                    <div class="solid">
+                        <div>
+                            <h3 class="text-regular">Уведомлять об акциях и скидках</h3>
+                            <p class="textcheck">Мы не будем отправлять спам, но напишем,
+                                 когда поступят новые товары или будет большая распродажа.</p>
+                        </div>
+                    </div>
+                    <div class="Notifications">
+                        <div class="fieldcheck">
+                            <input type="checkbox" name="sales" value="smsNotification" />
+                            <label>Уведомлять по SMS</label>
+                        </div>
+                        <div class="fieldcheck">
+                            <input type="checkbox" name="sales" value="emailNotification" />
+                            <label>По Email</label>
+                        </div>
+                        <div class="fieldcheck">
+                            <input type="checkbox" name="sales" value="pushNotification" />
+                            <label>Push-уведомления в приложении</label>
+                        </div>
+                    </div>
+                    <form action="https://www.bit-by-bit.ru/form-submit" class="final">
+                        <button type="submit" class="button-large ">Создать аккаунт</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
